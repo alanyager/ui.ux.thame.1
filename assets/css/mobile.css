@@ -88,3 +88,6 @@ footer{
     background: transparent !important;
     border: 0 !important;
 }
+header .list-group-item{
+    border: 0 !important;
+}
