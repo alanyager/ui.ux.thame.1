@@ -57,4 +57,11 @@
 }
 .game-thame-1{
     background: var(--light-bg-game);
+}.content-box-img{
+    background: var(--light-bg-game);
+    height: 350px;
+}
+.content-box-note{
+    background: var(--light-bg-game);
+    height: 250px;
 }
