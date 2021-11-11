@@ -28,16 +28,20 @@
 .flow-box-h{
     height: 135px;
 }
-.flow-box:nth-child(1){
+.flow-box:nth-child(1),
+.flow-box-color-1{
     background: var(--light-bg1-flow);
 }
-.flow-box:nth-child(2){
+.flow-box:nth-child(2),
+.flow-box-color-2{
     background: var(--light-bg2-flow);
 }
-.flow-box:nth-child(3){
+.flow-box:nth-child(3),
+.flow-box-color-3{
     background: var(--light-bg3-flow);
 }
-.flow-box:nth-child(4){
+.flow-box:nth-child(4),
+.flow-box-color-4{
     background: var(--light-bg4-flow);
 }
 .navbar-light-1{
