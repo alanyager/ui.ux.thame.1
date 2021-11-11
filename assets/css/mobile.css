@@ -8,6 +8,7 @@
     --light-bg4-flow: #EDEDED;
 
     --light-bg-game: #E8E8E8;
+    --light-bg-note: #9E9E9E;
   }
 .list-group-item-thame {
     position: relative;
@@ -58,7 +59,7 @@
 .game-thame-1{
     background: var(--light-bg-game);
 }.content-box-img{
-    background: var(--light-bg-game);
+    background: var(--light-bg-note);
     height: 350px;
 }
 .content-box-note{
