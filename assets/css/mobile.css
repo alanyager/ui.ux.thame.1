@@ -9,6 +9,8 @@
 
     --light-bg-game: #E8E8E8;
     --light-bg-note: #9E9E9E;
+
+    --light-bg-copyright:#F5F5F5;
   }
 .list-group-item-thame {
     position: relative;
@@ -65,4 +67,14 @@
 .content-box-note{
     background: var(--light-bg-game);
     height: 250px;
+}
+.copyright-bg-thame-1{
+    background: var(--light-bg-copyright);
+}
+.copyright-thame-1 .copyright-bg-thame-1{
+    height: 350px;
+}
+footer{
+    background: var(--light-bg2-flow);
+    height: 80px;
 }
