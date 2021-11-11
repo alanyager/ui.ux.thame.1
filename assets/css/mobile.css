@@ -85,7 +85,7 @@ footer{
     margin-right: 15px;
     margin-top: 15px;
 }
-.footer-list > .list-group.li{
+.footer-list > .list-group .list-group-item{
     background: transparent !important;
     border: 0 !important;
 }
