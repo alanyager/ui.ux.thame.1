@@ -32,6 +32,7 @@
 .flow-box-color-1{
     background: var(--light-bg1-flow);
 }
+.content-thame-1,
 .flow-box:nth-child(2),
 .flow-box-color-2{
     background: var(--light-bg2-flow);
