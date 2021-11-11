@@ -1,3 +1,4 @@
 .slide-web {
-    height: 325px;
+    height: 200px;
+    background: var(--light-bg2-flow);
 }
