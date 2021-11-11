@@ -11,6 +11,7 @@
     --light-bg-note: #9E9E9E;
 
     --light-bg-copyright:#F5F5F5;
+    --light-bg-blogger:#CECECE;
   }
 .list-group-item-thame {
     position: relative;
@@ -89,6 +90,9 @@ header .list-group-item-thame-1{
 }
 header .list-groupx-item-thame-1 {
     
+}
+.blogger-thame-1{
+    background: var(--light-bg-blogger);
 }
 @media screen and (max-width: 768px) {
     .slide-web{
