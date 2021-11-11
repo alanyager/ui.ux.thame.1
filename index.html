@@ -89,7 +89,50 @@
     <script type="text/javascript" src="vendors/slick/slick.js"></script>
 
     <script>
+        "use strict";
+        myFunction();
 
+        function myFunction() {
+            $('.your-class').slick({
+            dots: false,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay : true,
+                nextArrow: '<div class="slick-custom-arrow d-none slick-custom-arrow-right"><i class="fa fa-2x fa-angle-double-left scale-left" aria-hidden="true"></i></div>',
+                prevArrow: '<div class="slick-custom-arrow d-none slick-custom-arrow-left"><i class="fa fa-2x fa-angle-double-left" aria-hidden="true"></i></div>',
+
+            responsive: [
+            {
+                breakpoint: 1024,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+            breakpoint: 769,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+            breakpoint: 480,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+            });
+        }
     </script>
 				
 </body>
