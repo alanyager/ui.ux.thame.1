@@ -1,3 +1,12 @@
+:root {
+    --light-bg-color: #adadad;
+    --light-bg-flow: #f1f1f1;
+
+    --light-bg1-flow: #AAA9A9;
+    --light-bg2-flow: #C4C4C4;
+    --light-bg3-flow: #E1E1E1;
+    --light-bg4-flow: #EDEDED;
+  }
 .list-group-item-thame {
     position: relative;
     display: block;
@@ -9,30 +18,33 @@
  solid rgba(0,0,0,.125);
 }
 .bg-light-1{
-    background: #adadad;
+    background: var(--main-bg-color);
 }
 .flow-thame-1{
-    background: #f1f1f1;
+    background: var(--main-bg-flow);
 }
 .flow-box-h{
     height: 135px;
 }
 .flow-box:nth-child(1){
-    background: #AAA9A9;
+    background: var(--light-bg1-flow);
 }
 .flow-box:nth-child(2){
-    background: #C4C4C4;
+    background: var(--light-bg2-flow);
 }
 .flow-box:nth-child(3){
-    background: #E1E1E1;
+    background: var(--light-bg3-flow);
 }
 .flow-box:nth-child(4){
-    background: #EDEDED;
+    background: var(--light-bg4-flow);
 }
 .navbar-light-1{
     height: 80px;
 }
 .slide-web{
-    height: 500px;
-    background: #C4C4C4;
+    height: 200px;
+    background: var(--light-bg2-flow);
+}
+.flow-thame-1{
+    background: var(--light-bg-flow);
 }
