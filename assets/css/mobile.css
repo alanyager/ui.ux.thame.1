@@ -96,6 +96,7 @@ header .list-groupx-item-thame-1 {
 }
 .blogger-box-h{
     height: 180px;
+    margin: 10px;
 }
 @media screen and (max-width: 768px) {
     .slide-web{
