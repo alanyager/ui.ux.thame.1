@@ -14,6 +14,9 @@
 .flow-thame-1{
     background: #f1f1f1;
 }
+.flow-box{
+    background: #f1f1f1;
+}
 .flow-box:nth-child(1){
     background: #AAA9A9;
 }
