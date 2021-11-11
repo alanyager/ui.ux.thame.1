@@ -51,10 +51,6 @@
 .navbar-light-1{
     height: 80px;
 }
-.slide-web{
-    height: 325px;
-    background: var(--light-bg2-flow);
-}
 .flow-thame-1{
     background: var(--light-bg-flow);
 }
@@ -93,4 +89,10 @@ header .list-group-item-thame-1{
 }
 header .list-groupx-item-thame-1 {
     
+}
+@media screen and (max-width: 768px) {
+    .slide-web{
+        height: 325px;
+        background: var(--light-bg2-flow);
+    }
 }
