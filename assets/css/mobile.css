@@ -94,6 +94,9 @@ header .list-groupx-item-thame-1 {
 .blogger-thame-1{
     background: var(--light-bg-blogger);
 }
+.blogger-box-h{
+    height: 180px;
+}
 @media screen and (max-width: 768px) {
     .slide-web{
         height: 325px;
