@@ -85,20 +85,34 @@
 
     <section class="flow-thame-1 p-3">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="flow-box flow-box-h animated-background rounded">xx</div>
+            <div class="flow-thame container">
+                <div>
+                    <div class="flow-box flow-box-h rounded"></div>
                 </div>
-                <div class="col-3">
-                    <div class="flow-box flow-box-h animated-background rounded">xx</div>
+                <div>
+                    <div class="flow-box flow-box-h rounded"></div>
                 </div>
-                <div class="col-3">
-                    <div class="flow-box flow-box-h rounded">xx</div>
+                <div>
+                    <div class="flow-box flow-box-h rounded"></div>
                 </div>
-                <div class="col-3">
-                    <div class="flow-box flow-box-h rounded">xx</div>
+                <div>
+                    <div class="flow-box flow-box-h rounded"></div>
                 </div>
             </div>
+            <!-- <div class="row">
+                <div class="col-3">
+                    <div class="flow-box flow-box-h rounded">xx</div>
+                </div>
+                <div class="col-3">
+                    <div class="flow-box flow-box-h rounded">xx</div>
+                </div>
+                <div class="col-3">
+                    <div class="flow-box flow-box-h rounded">xx</div>
+                </div>
+                <div class="col-3">
+                    <div class="flow-box flow-box-h rounded">xx</div>
+                </div>
+            </div> -->
         </div>
     </section>
 
@@ -222,9 +236,51 @@
     <script>
         "use strict";
         myFunction();
+        myFunctionFlow();
 
         function myFunction() {
             $('.your-class').slick({
+            dots: false,
+            infinite: false,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay : true,
+                nextArrow: '<div class="slick-custom-arrow d-none slick-custom-arrow-right"><i class="fa fa-2x fa-angle-double-left scale-left" aria-hidden="true"></i></div>',
+                prevArrow: '<div class="slick-custom-arrow d-none slick-custom-arrow-left"><i class="fa fa-2x fa-angle-double-left" aria-hidden="true"></i></div>',
+
+            responsive: [
+            {
+                breakpoint: 1024,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+            breakpoint: 769,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+            breakpoint: 480,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+            });
+        }
+        function myFunctionFlow() {
+            $('.flow-thame').slick({
             dots: false,
             infinite: false,
             speed: 500,
