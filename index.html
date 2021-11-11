@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/pc.css" type="text/css" media="(min-width: 992px)">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick-theme.css"/>
     <title>Thame-1</title>
 </head>
 <body>
@@ -74,10 +77,70 @@
     <section>
         
         <div class="slide-web">
-            <div>xx</div>
-            <div>xx</div>
-            <div>xx</div>
+            <div class="your-class">
+                <div>your content</div>
+                <div>your content</div>
+                <div>your content</div>
+            </div>
         </div>
     </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="vendors/slick/slick.min.js"></script>
+
+    <script>
+        "use strict";
+        myFunction();
+        
+        function myFunction() {
+
+        }
+        function myFunction() {
+        $('.your-class').slick({
+            dots: false,
+            infinite: false,
+            speed: 1500,
+            slidesToShow: 3,
+            autoplay : true,
+            slidesToScroll: 3,
+                nextArrow: '<div class="slick-custom-arrow d-none slick-custom-arrow-right"><i class="fa fa-2x fa-angle-double-left scale-left" aria-hidden="true"></i></div>',
+                prevArrow: '<div class="slick-custom-arrow d-none slick-custom-arrow-left"><i class="fa fa-2x fa-angle-double-left" aria-hidden="true"></i></div>',
+        
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    dots: false,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 769,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    dots: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+        });
+
+
+
+
+    </script>
+				
 </body>
 </html>
