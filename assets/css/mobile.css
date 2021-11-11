@@ -68,6 +68,9 @@
     background: var(--light-bg-game);
     height: 250px;
 }
+.copyright-thame-1{
+    background: var(--light-bg-copyright); 
+}
 .copyright-bg-thame-1{
     background: var(--light-bg-copyright);
 }
