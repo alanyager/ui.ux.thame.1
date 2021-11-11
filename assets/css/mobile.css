@@ -88,6 +88,10 @@ footer{
     background: transparent !important;
     border: 0 !important;
 }
-header .list-group-item{
+header .list-group-item-thame-1{
     border: 0 !important;
+    padding: 0 !important;
+}
+header .list-groupx-item-thame-1 {
+    padding: 0.5rem 1rem !important;
 }
