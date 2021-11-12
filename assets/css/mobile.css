@@ -12,6 +12,7 @@
 
     --light-bg-copyright:#F5F5F5;
     --light-bg-blogger:#CECECE;
+    --sing-bg-blogger:#DADADA;
   }
 .list-group-item-thame {
     position: relative;
@@ -55,6 +56,7 @@
 .flow-thame-1{
     background: var(--light-bg-flow);
 }
+.blogger-sing,
 .game-thame-1{
     background: var(--light-bg-game);
 }.content-box-img{
@@ -104,6 +106,20 @@ header .list-groupx-item-thame-1 {
 .blogger-box-h{
     height: 180px;
     margin: 10px;
+}
+.blogger-img{
+    width: 100%;
+    height: 290px;
+    background: var(--sing-bg-blogger);
+}
+.blogger-text.h1{
+    height: 20px;
+    background: var(--sing-bg-blogger);
+}
+.blogger-text.p{
+    height: 50px;
+    background: var(--sing-bg-blogger);
+    
 }
 @media screen and (max-width: 768px) {
     .slide-web{
