@@ -91,6 +91,15 @@ header .list-group-item-thame-1{
 header .list-groupx-item-thame-1 {
     
 }
+.promotion-thame-1,
+.blogger-thame-1{
+    background: var(--light-bg-blogger);
+}
+.promotion-box-h,
+.blogger-box-h{
+    height: 180px;
+    margin: 10px;
+}
 .blogger-thame-1{
     background: var(--light-bg-blogger);
 }
