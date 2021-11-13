@@ -28,12 +28,64 @@
         pagination: {
             el: '.swiper-pagination',
         },
-lazy: true,
+        lazy: true,
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        }
+        },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+                1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+            },
+        });
+
+        const swiper = new Swiper('.swiper-flow', {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        // Optional parameters
+        slidesPerView: 4,
+        spaceBetween: 4,
+        lazy: true,
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        lazy: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+                1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+            },
         });
 
     </script>
@@ -163,7 +215,41 @@ lazy: true,
     <section class="flow-thame-1 pb-2">
         <div class="container p-0">
             <div class="flow-thame">
-                <div>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width: 799px)" data-srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy">
+                                <source media="(min-width: 800px)" data-srcset="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy">
+                                <img data-src="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width: 799px)" data-srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy">
+                                <source media="(min-width: 800px)" data-srcset="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy">
+                                <img data-src="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(max-width: 799px)" data-srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy">
+                                <source media="(min-width: 800px)" data-srcset="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy">
+                                <img data-src="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                            </picture>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- <div>
                     <div class="flow-box flow-box-h rounded"></div>
                 </div>
                 <div>
@@ -174,7 +260,7 @@ lazy: true,
                 </div>
                 <div>
                     <div class="flow-box flow-box-h rounded"></div>
-                </div>
+                </div> -->
             </div>
             <!-- <div class="row">
                 <div class="col-3">
