@@ -16,6 +16,7 @@
         // Optional parameters
         slidesPerView: 1,
         spaceBetween: 30,
+        lazy: true,
         direction: 'horizontal',
         loop: true,
 
@@ -23,7 +24,7 @@
         pagination: {
             el: '.swiper-pagination',
         },
-
+lazy: true,
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',
@@ -47,9 +48,15 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">
+                <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" class="swiper-lazy" />
+            </div>
+            <div class="swiper-slide">
+                <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" class="swiper-lazy" />
+            </div>
+            <div class="swiper-slide">
+                <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" class="swiper-lazy" />
+            </div>
             ...
         </div>
         <!-- If we need pagination -->
