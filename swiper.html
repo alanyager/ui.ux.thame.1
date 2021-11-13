@@ -4,12 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thame-1</title>
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/pc.css" type="text/css" media="(min-width: 992px)">
     <link rel="stylesheet" href="assets/css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="vendors/slick/slick-theme.css"/>
-    <title>Thame-1</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        // Optional parameters
+        slidesPerView: 1,
+        spaceBetween: 3,
+        lazy: true,
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        lazy: true,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+                1024: {
+                    slidesPerView: 1,
+                    spaceBetween: 3,
+                },
+            },
+        });
+
+        const swiperflow = new Swiper('.swiper-flow', {
+        loop: true,
+        slidesPerView: 4,
+        slidesPerColumn: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+      });
+
+    </script>
+    <style>
+        .swiper,
+        .swiper-flow {
+            width: 100%;
+            height: auto;
+            }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick-theme.css"/> -->
 </head>
 <body>
     <!-- menutop-pc-1 -->
@@ -47,7 +108,7 @@
                             <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
                         </li>
                         <li class="d-lg-none d-lg-block nav-item">
-                            <a class="nav-link" href="swiper.html">เมนู 1</a>
+                            <a class="nav-link" href="#">เมนู 1</a>
                         </li>
                         <li class="d-lg-none d-lg-block nav-item">
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -87,18 +148,82 @@
     <!-- silder -->
     <section class="slider-thame-1">
         <div class="slide-web">
-            <div class="your-class container">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+            <!-- Slider main container -->
+            <div class="swiper container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(max-width: 799px)" data-srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy">
+                            <source media="(min-width: 800px)" data-srcset="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy">
+                            <img data-src="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(max-width: 799px)" data-srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy">
+                            <source media="(min-width: 800px)" data-srcset="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy">
+                            <img data-src="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source media="(max-width: 799px)" data-srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy">
+                            <source media="(min-width: 800px)" data-srcset="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy">
+                            <img data-src="https://via.placeholder.com/1140x400.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                        </picture>
+                    </div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
 
     <section class="flow-thame-1 pb-2">
-        <div class="container p-0">
+        <div class="container overflow-hidden p-0">
             <div class="flow-thame">
-                <div>
+                <div class="swiper-flow">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide flow-box flow-box-h rounded">
+                            <picture>
+                                <source media="(max-width: 799px)" srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy">
+                                <source media="(min-width: 800px)" srcset="https://via.placeholder.com/330x140.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy">
+                                <img src="https://via.placeholder.com/330x140.png/C4C4C4?Text=SILDE1.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide flow-box flow-box-h rounded">
+                            <picture>
+                                <source media="(max-width: 799px)" srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy">
+                                <source media="(min-width: 800px)" srcset="https://via.placeholder.com/330x140.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy">
+                                <img src="https://via.placeholder.com/330x140.png/C4C4C4?Text=SILDE2.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide flow-box flow-box-h rounded">
+                            <picture>
+                                <source media="(max-width: 799px)" srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy">
+                                <source media="(min-width: 800px)" srcset="https://via.placeholder.com/330x140.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy">
+                                <img src="https://via.placeholder.com/330x140.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide flow-box flow-box-h rounded">
+                            <picture>
+                                <source media="(max-width: 799px)" srcset="https://via.placeholder.com/768x300.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy">
+                                <source media="(min-width: 800px)" srcset="https://via.placeholder.com/330x140.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy">
+                                <img src="https://via.placeholder.com/330x140.png/C4C4C4?Text=SILDE3.com" class="swiper-lazy" alt="Chris standing up holding his daughter Elva">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div>
                     <div class="flow-box flow-box-h rounded"></div>
                 </div>
                 <div>
@@ -109,7 +234,7 @@
                 </div>
                 <div>
                     <div class="flow-box flow-box-h rounded"></div>
-                </div>
+                </div> -->
             </div>
             <!-- <div class="row">
                 <div class="col-3">
@@ -408,11 +533,11 @@
             <small class="fw-lighter">copyrigth</small>
         </div>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="vendors/slick/slick.js"></script>
+    <script type="text/javascript" src="vendors/slick/slick.js"></script> -->
 
-    <script>
+    <!-- <script>
         "use strict";
         myFunction();
         myFunctionFlow();
@@ -583,7 +708,7 @@
             ]
             });
         }
-    </script>
+    </script> -->
 				
 </body>
 </html>
