@@ -51,10 +51,19 @@
         });
 
         const swiperflow = new Swiper('.swiper-flow', {
-            watchSlidesProgress: true,
-            slidesPerView: 3,
-            lazy: true,
-        });
+        slidesPerView: 3,
+        lazy: true,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
     </script>
     <style>
