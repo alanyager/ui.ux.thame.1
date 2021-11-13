@@ -51,25 +51,15 @@
         });
 
         const swiperflow = new Swiper('.swiper-flow', {
-        init: false,
         lazy: true,
-        speed:800,
-        slidesPerView: 3, // or 'auto'
-        slidesPerColumn: 2,
-        slidesPerGroup:3,
-        spaceBetween: 5,
-        grabCursor: true,
-        autoplay: {
-        delay:3000
-        },
+        loop: true, // <- causes issues combined with multi row setup!!
+        slidesPerView: 4,
+        slidesPerColumn: 1,
+        spaceBetween: 30,
         pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+            el: ".swiper-pagination",
+            clickable: true
+        }
       });
 
     </script>
