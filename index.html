@@ -51,10 +51,16 @@
         });
 
         const swiperflow = new Swiper('.swiper-flow', {
-        slidesPerView: 4,
-        lazy: true,
-        centeredSlides: true,
-        spaceBetween: 8,
+            init: false,
+        speed:800,
+        slidesPerView: 3, // or 'auto'
+        slidesPerColumn: 2,
+        slidesPerGroup:3,
+        spaceBetween: 5,
+        grabCursor: true,
+        autoplay: {
+        delay:3000
+        },
         pagination: {
           el: ".swiper-pagination",
           type: "fraction",
