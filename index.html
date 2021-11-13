@@ -4,14 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thame-1</title>
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/pc.css" type="text/css" media="(min-width: 992px)">
     <link rel="stylesheet" href="assets/css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="vendors/slick/slick-theme.css"/>
-    <title>Thame-1</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+
+    </script>
+    <!-- <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick-theme.css"/> -->\
 </head>
 <body>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
     <!-- menutop-pc-1 -->
     <header>
         <div class="bg-light text-dark">
@@ -408,9 +456,9 @@
             <small class="fw-lighter">copyrigth</small>
         </div>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="vendors/slick/slick.js"></script>
+    <script type="text/javascript" src="vendors/slick/slick.js"></script> -->
 
     <script>
         "use strict";
